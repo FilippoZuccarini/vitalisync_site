@@ -1,0 +1,75 @@
+:root  > * {
+    --md-primary-fg-color:        #00796b;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+
+/* Migliora la leggibilità su mobile */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    /* background-color: #f8f9fa; */
+    /* color: #333; */
+}
+
+/* Stile per i titoli */
+h1, h2, h3 {
+    /* color: #00796b; */
+    font-weight: bold;
+}
+
+/* Container per grafici più adattabili */
+div[id$="-chart"] {
+    width: 100% !important;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    /* background: white; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adatta i grafici su mobile */
+@media (max-width: 768px) {
+    div[id$="-chart"] {
+        height: 300px;
+    }
+}
+
+/* Tabelle con scroll su mobile */
+table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* background: white; */
+    border-radius: 10px;
+}
+
+/* Bottoni in stile app */
+button, .btn {
+    /* background: #00796b;
+    color: white; */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover, .btn:hover {
+    /* background: #004d40; */
+}
+
+/* Nasconde la sidebar su mobile */
+@media (max-width: 768px) {
+    .md-sidebar {
+        display: none;
+    }
+}
+
+/* Spaziatura più ariosa */
+@media (max-width: 768px) {
+    .md-content {
+        padding: 15px;
+    }
+}
